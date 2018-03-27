@@ -32,7 +32,7 @@ u8 printFlag;
 
 /** setup protocol */
 void initProtocol(void) {
-    u8 i,j;
+    u16 i,j;
     totalCnt = 0;
     for(i=0;i<DEVICE_CHL_NUM;i++) {
         start_index[i] = totalCnt;
@@ -169,7 +169,7 @@ void queryCANDevice(u8 index) {
 /** report gathered information */
 void reportInfo(void) {
     u8 *report;
-    u8 i,j;
+    u16 i,j;
     u8 cs;
     u16 val;
     float vol;
